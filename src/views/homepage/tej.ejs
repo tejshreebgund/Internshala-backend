@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internships</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/grid.css">
+    <link rel="stylesheet" href="/static/tej.css">
+    <style media="screen">
+        .carousel-cell {
+            width: 100%;
+        }
+
+        .carousel-cell:before {
+            display: block;
+        }
+    </style>
+
+<body>
+    <!-- nav -->
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+
+
+        <div class="fresher">
+            <a href="..//index.html" onclick="logout()">Logout</a>
+        </div>
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Online Trianings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../knowmore/python.html">Programming</a>
+                <a href="../knowmore/autocad3d.html">Core Engineering</a>
+                <a href="../knowmore/solidwork.html">Data Science</a>
+                <a href="../knowmore/graphicdesign.html">Design</a>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+
+
+
+
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+
+        <div class="carousel-cell">
+            <img class="w3-image" style="width: 100%;" src="/static/home1.png">
+        </div>
+        <div class="carousel-cell">
+            <img class="w3-image" style="width: 100%;" src="/static/home2.png">
+        </div>
+    </div><br>
+    <h2>Online Trainings we offer:</h2>
+    <p class="head">Most Popular (4)</p>
+    <div class="container">
+    <%user.map((el,index)=>{%>
+        <% if(index<4){%>
+   
+
+                <div class="items">
+
+
+                    <img src="<%=el.image%>" />
+                    <h4 style="text-align: center;">
+                        <%=el.course_name%>
+                    </h4>
+                    <p style="text-align: center;">
+                        <%=el.description%>
+                    </p>
+                    <hr>
+                    <a class="link" href="">
+                        <%=el.moreinfo%>
+                    </a>
+                    <a class="link1">
+                        <%=el.Duration%>
+                            <p class="midline"></p>
+                    </a>
+                </div>
+
+            <% }%>
+                <%})%>
+
+            </div>
+
+            <p class="head">Digital Marketing (4)</p>
+    <div class="container">
+    <%user.map((el,index)=>{%>
+        <% if(index>=4 && index<8){%>
+   
+
+                <div class="items">
+
+
+                    <img src="<%=el.image%>" />
+                    <h4 style="text-align: center;">
+                        <%=el.course_name%>
+                    </h4>
+                    <p style="text-align: center;">
+                        <%=el.description%>
+                    </p>
+                    <hr>
+                    <a class="link" href="">
+                        <%=el.moreinfo%>
+                    </a>
+                    <a class="link1">
+                        <%=el.Duration%>
+                            <p class="midline"></p>
+                    </a>
+                </div>
+
+            <% }%>
+                <%})%>
+
+            </div>
+
+            
+            <p class="head">Programming (4)</p>
+    <div class="container">
+    <%user.map((el,index)=>{%>
+        <% if(index>=8 && index<12){%>
+   
+
+                <div class="items">
+
+
+                    <img src="<%=el.image%>" />
+                    <h4 style="text-align: center;">
+                        <%=el.course_name%>
+                    </h4>
+                    <p style="text-align: center;">
+                        <%=el.description%>
+                    </p>
+                    <hr>
+                    <a class="link" href="">
+                        <%=el.moreinfo%>
+                    </a>
+                    <a class="link1">
+                        <%=el.Duration%>
+                            <p class="midline"></p>
+                    </a>
+                </div>
+
+            <% }%>
+                <%})%>
+
+            </div>
+
+            
+            <p class="head">Core Enginerring(4)</p>
+    <div class="container">
+    <%user.map((el,index)=>{%>
+        <% if(index>=12 && index<16){%>
+   
+
+                <div class="items">
+
+
+                    <img src="<%=el.image%>" />
+                    <h4 style="text-align: center;">
+                        <%=el.course_name%>
+                    </h4>
+                    <p style="text-align: center;">
+                        <%=el.description%>
+                    </p>
+                    <hr>
+                    <a class="link" href="">
+                        <%=el.moreinfo%>
+                    </a>
+                    <a class="link1">
+                        <%=el.Duration%>
+                            <p class="midline"></p>
+                    </a>
+                </div>
+
+            <% }%>
+                <%})%>
+
+            </div>
+
+
+
+
+
+
+         
+
+
+                
+                    <div class="clear"></div>
+                    <!-- grid -->
+                    <div class="parent">
+                        <div>
+                            <h3>Internships by places</h3>
+                            <h4>Internship in India</h4>
+                            <h4>Internship in Delhi</h4>
+                            <h4>Internship in Bagalore</h4>
+                            <h4>Internship in Hyderabad</h4>
+                            <h4>Internship in Mumbai</h4>
+                            <h4>Internship in Chennai</h4>
+                            <h4>Internship in Gurgaon</h4>
+                            <h4>Internship in Kolkata</h4>
+                            <h4>Virtual Internship </h4>
+                        </div>
+
+                        <div>
+                            <h3>Internship by Stream</h3>
+                            <h4>Computer Science Internship</h4>
+                            <h4>Electronics Internship</h4>
+                            <h4>Mechanical Internship</h4>
+                            <h4>Civil Internship</h4>
+                            <h4>Marketing Internship</h4>
+                            <h4>Chemical Internship</h4>
+                            <h4>Finance Internship</h4>
+                            <h4>Summer Research Fellowship</h4>
+                            <h4>Campus Ambassador Program</h4>
+                        </div>
+
+                        <div>
+                            <h3 class="offer">Online Trainings</h3>
+                            <h4>Programming with Python</h4>
+                            <h4>Digital Marketing </h4>
+                            <h4>Web Development
+                            </h4>
+                            <h4>Machine Learning
+                            </h4>
+                            <h4>Advanced Excel
+                            </h4>
+                            <h4>Ethical Hacking</h4>
+                            <h4>AutoCAD
+                            </h4>
+                            <h4>Creative Writing</h4>
+                            <h4>Data Science</h4>
+                        </div>
+
+                        <div>
+                            <h3>About Internshala</h3>
+                            <h4>About us</h4>
+                            <h4>We're hiring</h4>
+                            <h4>Hire interns for your company</h4>
+                            <h4>Team Diary</h4>
+                            <h4>Blog</h4>
+                            <h4>Our Services</h4>
+                            <h4>Terms & Conditions</h4>
+                            <h4>Privacy</h4>
+                            <h4>Contact us</h4>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                    <div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+                        <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer"
+                            class="playy"> Get Android App</a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x"
+                                id="ic1"></i></a>
+                        <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x" id="ic"></i></a>
+                        <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+                        <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+                    </div>
+                    <h4 class="copy">© Copyright 2021 Internshala</h4>
+                    <!-- grid -->
+
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+                    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+
+
+
+</body>
+
+</html>
+<script src="home.js"></script>

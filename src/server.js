@@ -4,6 +4,7 @@ const express = require ("express");
 const connect = require("./configs/db")
 
 const userController = require("./controller/user.controller");
+const homepageController = require("./controller/homepage.controller");
 const exp = require("constants");
 
 
@@ -18,6 +19,7 @@ app.use("/static",express.static(path.join(__dirname,"public")));
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs')
 app.use("/users",userController)
+app.use("/homepage",homepageController)
 
 
 app.listen(2999,async function(){

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/landB.css">
+    <link rel="stylesheet" href="/static/landA.css">
+    <link rel="stylesheet" href="/static/grid.css">
+    <link rel="stylesheet" href="/static/navbar.css">
+
+   <style media="screen">
+      .carousel-cell {
+        width: 100%;
+        }
+        .carousel-cell:before {
+          display: block;
+        }
+      </style>
+
+
+</head>
+<body>
+
+<div class="navbar">
+ 
+    <div class="logo">
+  </div>
+      <div class="clear"></div>
+ 
+  <div class="dropdown">
+    <!-- <p style="float: left;margin-top: 29px;">Fresher Jobs</p> -->
+    <button class="register">Register/Login
+
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <a href="/users/login">Login</a>
+      <a href="/users/signup">Register as a student</a>
+      <a href="/users/employer">Register as a employer</a>
+    </div>
+   
+  </div> 
+ 
+  <div class="logo">
+    <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" class="inlog">
+</div>
+      <!-- <div class="clear"></div> -->
+  <a href=".//Homepage/homepage1.html" style="margin-top: 17px; ">Fresher jobs</a>
+  <div class="dropdown">
+    <button class="dropbtn">Online Trianings<span> offers</span>
+              <i class="fa fa-caret-down"></i>
+      </button>
+     
+      <div class="dropdown-content">
+        <a href=".//knowmore/home.html">Programming</a>
+        <a href=".//knowmore/home.html">Core Engineering</a>
+        <a href=".//knowmore/home.html">Data Science</a>
+        <a href=".//knowmore/home.html">Design</a>
+      </div>
+     
+    </div> 
+   
+  <div class="dropdown">
+    <button class="dropbtn">Internships
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href=".//Homepage/homepage1.html">Work From Home</a>
+        <a href=".//Homepage/homepage1.html">profile</a>
+        <a href=".//Homepage/homepage1.html">category</a>
+      </div>
+    </div>       
+</div>
+
+
+<input type="text" id="in" placeholder="What are you looking for?"><img src="/static/search.png" class="srch"onclick="searchh()" >
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <img class="w3-image"  src="/static/img1.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image" src="/static/img2.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image"  src="/static/img3.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image"  src="/static/img1.png">
+      </div>
+      <div class="carousel-cell">
+        <img class="w3-image"  src="/static/img2.png">
+      </div>
+      
+    </div>
+
+
+
+<!-- yogesh -->
+    <div id = middle-page>
+      <div class="intern-cta">
+          <h2>Internships</h2>
+          <p>Apply to 10,000+ internships for free</p>
+          <div class="catagories-cities">
+           <div class="text" href=".//Homepage/homepage1.html">View all internships-></div>
+              <h4>Popular Cities</h4>
+            
+              <div class="cities">
+                  <a class="city" href=".//Homepage/homepage1.html">
+                      <div class="image">
+                      <img src="https://internshala.com/static/images/home/internships/categories/work_from_home.svg" alt="work from home">
+                      
+                   </div>
+                   <div class="txt">Work from home</div>
+                  </a>
+                  <a class="city" href=".//Homepage/homepage1.html">
+                  <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/delhi_ncr.svg" alt="Delhi/NCR">
+                   </div>
+                   <div  class="txt">Delhi/NCR</div>
+                   </a>
+                   <a class="city" href=".//Homepage/homepage1.html">
+                <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/bangalore.svg" alt="Banglore">
+                   </div>
+                   <div  class="txt">Banglore</div>
+                   </a>
+                   <a class="city" href=".//Homepage/homepage1.html">
+               <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/mumbai.svg" alt="Mumbai">
+               </div>
+                   <div  class="txt"> Mumbai</div>
+               </a>  
+               <a class="city" href=".//Homepage/homepage1.html">
+               <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/hyderabad.svg" alt="Hydrabaad">
+               </div>
+                   <div  class="txt">Hydrabaad</div>
+             
+           </a>
+           <a class="city" href=".//Homepage/homepage1.html">
+               <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/chennai.svg" alt="Chennai">
+               </div>
+                   <div  class="txt">Chennai</div>
+              </a>
+              <a class="city" href=".//Homepage/homepage1.html">
+
+               <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/kolkata.svg" alt="Kolkatta">
+               </div>
+                   <div  class="txt">Kolkatta</div>
+              
+           </a>
+               <a class="city" href=".//Homepage/homepage1.html">
+               <div>
+                   <img src="https://internshala.com/static/images/home/internships/categories/international.svg" alt="International">
+               </div>
+                   <div  class="txt">International</div>
+              
+           </a>
+        </div>
+           <div class="categories">
+               <h4>Popular Catagories</h4>
+               <div class="catagories-list">
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/part_time.svg" alt="Part-time">
+                   </div>
+                       <div class="txt">Part-time</div>
+                   </a>
+                   <a class="Catagory" href=".//Homepage/homepage1.html">                    <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/engineering.svg" alt="Engineering">
+                   </div>
+                       <div class="txt">Engineering</div>
+                   </a>
+
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/ngo.svg" alt="NGO">
+                   </div>
+                       <div class="txt">NGO</div>
+                   </a>
+                  
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/mba.svg" alt="MBA">
+                   </div>
+                       <div class="txt">MBA</div>
+                   </a>
+                   <a class="Catagory" href=".//Homepage/homepage1.html">                  
+                         <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/design.svg" alt="Design">
+                   </div>
+                       <div class="txt">Design</div>
+                   </a>
+
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/science.svg" alt="Science">
+                   </div>
+                       <div class="txt">Science</div>
+                   </a>
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/media.svg" alt="Media">
+                   </div>
+                       <div class="txt">Media</div>
+                   </a>
+                   <a class="Catagory" href=".//Homepage/homepage1.html">
+                   <div>
+                       <img src="https://internshala.com/static/images/home/internships/categories/humanities.svg" alt="Humanities">
+                   </div>
+                       <div class="txt">Humanities</div>
+                   </a>  
+                   </div>
+               </div>
+           </div>
+          </div>
+      </div>
+      <!-- yogesh -->
+
+
+
+      <!-- vishal -->
+      <div class="Intern_proj">
+        <div class="Intern_detail">
+            <div class="Intern_tr_fr">
+                <h2 >Internshala Trainings</h2>
+                <p>Learn new-age skills on the go</p>
+            </div>
+            <div class="internship_img_cont">
+                <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/programming_with_python.svg"></div>
+                    <div class="Tr_text" >Programming with Python</div>
+                   
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/digital_marketing.svg"></div>
+                    <div class="Tr_text">Digital Marketting</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/web_development.svg"></div>
+                    <div class="Tr_text">Web Development</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/machine_learning.svg"></div>
+                    <div class="Tr_text">Machine Learning</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/advanced_excel.svg"></div>
+                    <div class="Tr_text">Advance Excel</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="https://internshala.com/static/images/home/trainings/icons/ethical_hacking.svg"></div>
+                    <div class="Tr_text">Ethical Hacking</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="	https://internshala.com/static/images/home/trainings/icons/autocad.svg"></div>
+                    <div class="Tr_text">AutoCad</div>
+                </div>
+            </a>
+            <a href=".//Homepage/homepage1.html">
+                <div class="Img">
+                    <div class="Tr_img"><img src="	https://internshala.com/static/images/home/trainings/icons/creative_writing.svg"></div>
+                    <div class="Tr_text">Creative Writing</div>
+                </div>
+            </a>   
+            </div>
+           
+        </div>
+        <div class="Intern_detail">
+            <div class="Intern_tr_fr">
+                <h2>Freshers Job<span class="span_new">New</span></h2>
+            <p>Premium fresher jobs on your fingertips</p>
+                </div>
+                <div class="freshers_job_cont">
+                    <div class="freshers_img">
+                        <div class="Fr_img"><img src="https://internshala.com/static/images/home/jobs/perks/ctc.svg"></div>
+                        <div  class="Fr_text">Minimum CTC of 3 LPA</div>
+                    </div>
+                    <div class="freshers_img">
+                        <div class="Fr_img"><img src="https://internshala.com/static/images/home/jobs/perks/dream.svg"></div>
+                        <div  class="Fr_text">Dream companies</div>
+                    </div>
+                    <div class="freshers_img">
+                        <div class="Fr_img"><img src="https://internshala.com/static/images/home/jobs/perks/verified.svg"></div>
+                        <div  class="Fr_text">100% verified jobs</div>
+                    </div>
+                </div>
+        </div>
+    </div>
+         <!-- vishal -->
+
+
+         <!-- grid -->
+
+ 
+         <div class="parent">
+          <div>
+              <h3>Internships by places</h3>
+              <h4>Internship in India</h4>
+              <h4>Internship in Delhi</h4>
+              <h4>Internship in Bagalore</h4>
+              <h4>Internship in Hyderabad</h4>
+              <h4>Internship in Mumbai</h4>
+              <h4>Internship in Chennai</h4>
+              <h4>Internship in Gurgaon</h4>
+              <h4>Internship in Kolkata</h4>
+              <h4>Virtual Internship </h4>
+          </div>
+  
+          <div>
+              <h3>Internship by Stream</h3>
+              <h4>Computer Science Internship</h4>
+              <h4>Electronics Internship</h4>
+              <h4>Mechanical Internship</h4>
+              <h4>Civil Internship</h4>
+              <h4>Marketing Internship</h4>
+              <h4>Chemical Internship</h4>
+              <h4>Finance Internship</h4>
+              <h4>Summer Research Fellowship</h4>
+              <h4>Campus Ambassador Program</h4>
+          </div>
+  
+          <div>
+              <h3 class="offer">Online Trainings</h3>
+              <h4>Programming with Python</h4>
+              <h4>Digital Marketing </h4>
+              <h4>Web Development
+              </h4>
+              <h4>Machine Learning
+              </h4>
+              <h4>Advanced Excel
+              </h4>
+              <h4>Ethical Hacking</h4>
+              <h4>AutoCAD
+              </h4>
+              <h4>Creative Writing</h4>
+              <h4>Data Science</h4>
+          </div>
+  
+          <div>
+              <h3>About Internshala</h3>
+              <h4>About us</h4>
+              <h4>We're hiring</h4>
+              <h4>Hire interns for your company</h4>
+              <h4>Team Diary</h4>
+              <h4>Blog</h4>
+              <h4>Our Services</h4>
+              <h4>Terms & Conditions</h4>
+              <h4>Privacy</h4>
+              <h4>Contact us</h4>
+          </div>
+      </div>
+      <hr class="hr">
+      <div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+          <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+          </div>
+  
+         <div class="icon">
+          <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+          <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+          <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+          <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+      </div>
+      <h4 class="copy">© Copyright 2021 Internshala</h4>
+
+         <!-- grid -->
+
+
+
+  
+
+</body>
+</html>
+<script src="./payment/pay.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>

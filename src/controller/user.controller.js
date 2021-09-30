@@ -2,6 +2,18 @@ const express = require ("express");
 const router = express.Router()
 const User= require("../models/user.model")
 
+router.get("/data",async function(req,res){
+  const user = await User.find().lean().exec()
+ res.render("homepage/tej",{
+   user:user
+ })
+})
+
+router.get("",async function(req,res){
+  const user = await User.find().lean().exec()
+ return res.send(user)
+})
+
 
 router.get("/create",async function(req,res){
   // const user = await User.find().lean().exec()
@@ -9,14 +21,27 @@ router.get("/create",async function(req,res){
 
   res.render("users/adduser")
 })
-
+//signup
 router.get("/signup",async function(req,res){
 
   res.render("users/signup")
 })
+//login
 router.get("/login",async function(req,res){
 
   res.render("users/login")
+})
+
+
+//index file
+router.get("/index",async function(req,res){
+
+  res.render("users/index")
+})
+//employer
+router.get("/employer",async function(req,res){
+
+  res.render("users/employer")
 })
 
 router.post("/signup",async function (req,res){

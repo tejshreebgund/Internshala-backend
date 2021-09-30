@@ -1,0 +1,130 @@
+.Intern_proj{
+    width: 100%;
+    height: 650px;
+   display: flex;
+   flex-direction: column;
+    row-gap: 5%;
+}
+.Intern_detail{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+   row-gap: 5%;
+   margin-bottom: 100px;
+    
+}
+.intern_tr_fr{
+    width: 40%;
+    height: 20%;
+    max-width: 1224px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.Intern_tr_fr h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px; 
+    text-align: left;
+    margin-left: 170px;
+    margin-top: 60px;
+}
+.Intern_tr_fr p{
+   
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 170px;
+}
+.internship_img_cont{
+    width:100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: 210px;
+
+  
+}
+.internship_img_cont a{
+    width: 10%;
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+
+}
+.Img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    margin: 0;
+}
+.Tr_img{
+    width: 100%;
+    align-items: center;
+}a{
+    text-decoration: none;
+}
+.Tr_text{
+    text-decoration: none;
+    width: 70%;
+    font-size: 18px;
+    text-align:center;
+    margin-left: 4px;
+    color: black;   
+    outline: none;
+    margin-top: 15px;
+}
+a:hover {     
+        box-shadow: 0px 0px 15px rgb(187, 183, 183);
+        color: #008BDC
+      }
+.freshers_job_cont{
+    width: 70%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+  
+  
+}
+.freshers_img{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-right: 7%;
+   
+}
+.Fr_img{
+    width: 100%; 
+    
+}
+.Fr_img img{
+   padding-left:25%;
+}
+.Fr_text{
+    width: 100%;
+    font-size: 18px;
+    text-align:center;
+}
+.Intern_detail .span_new{
+ font-size: 18px;
+font-weight: 400;
+padding-top: 2px;
+padding-right: 8px;
+padding-bottom: 2px;
+padding-left: 8px;
+background: #FF8C00;
+border-radius: 3px;
+color: #fff;
+font-family:sans-serif;
+position: relative;
+bottom: 4px;
+margin-left: 4px;
+}.fresh{
+    margin-top: 200px;
+}.w3-image{
+    width: 100%;height: 380px;
+}
