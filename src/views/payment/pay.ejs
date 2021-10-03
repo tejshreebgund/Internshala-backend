@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/static/css/pay.css">
+   <link rel="icon" href="/static/images/intern.jpg"></link>
+   <title>Proceed To Pay : Internshala.com</title>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+
+
+
+
+
+        <div class="fresher">
+            <a href="/users/homereal"><u>Home</u></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Online Trianings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/users/tej">Programming</a>
+                <a href="/users/tej">Core Engineering</a>
+                <a href="/users/tej">Data Science</a>
+                <a href="/users/tej">Design</a>
+            </div>
+        </div>
+</div>
+        <div class="box">
+            <p class="one">Internshala online training on Web Development</p>
+            <label  class="email" >Email</label>
+            <input type="email" id="inputt" class="inp" placeholder="john@gmail.com">
+            <label class="batch">Batch &nbsp &nbsp</label>
+            <select class="inpp">
+                <option>26th Aug,2021</option>
+                <option>1st Sep,2021</option>
+                <option>26th Sep,2021</option>
+                <option>1st Oct,2021</option>
+                <option>26th Oct,2021</option>
+                <option>1st Nov,2021</option>
+            </select>
+            <label id="js">Coupan Applied</label>
+            <input type="text" class="inp" placeholder="DEGREE10">
+            <div id="email">  <strike>₹4499</strike></div>
+            <div  class="orange"> &nbsp 1349/-</div>
+            <div style="color: #484848;">&nbsp Valid till 27th Aug</div>
+            <button class="sign"><a onclick="enputt()"> Proceed to pay</a></button>
+          
+        </div>
+
+</body>
+<script>
+      function enputt(){
+        var val = document.getElementById('inputt').value;
+        if(val==""){
+            alert("Enter Email!")
+        }else{
+            window.location.href="/users/card";
+        }
+    }
+</script>
+</html>
+

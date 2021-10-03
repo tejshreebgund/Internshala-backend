@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/card.css">
+    <link rel="icon" href="/static/images/intern.jpg"></link>
+    <title>Card Payment : Internshala.com</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+        </div>
+        <div class="bot">
+            <div class="left">
+                <div class="leftone">Payment Information</div>
+                <div class="lefta">
+                    <p >Credit Cards   &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp    ></p>
+                    <p>Debit Cards</p>
+                    <p>Net banking</p>
+                    <p>Paytm</p>
+                    <p>Wallet</p>
+                    <p>UPI</p>
+                    <p >EMI Options</p>
+                    <p style="border: none;background-color: #f0f0f0;padding-bottom: 69px;"></p>
+                </div>
+                <div class="leftb">
+                    <label >Card Number</label>
+                    <div id="container">
+                    <input type="number" id="in1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7-f48bfFKP3-puTeCEVhE77W2GbGkFaNjg&usqp=CAU" id="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUrSAW3P8DAScPXnS2Wc6d_IbbZSNd_GlFKQ&usqp=CAU" id="image1">
+                </div>
+                    <label>Expiry Date</label>
+                    <label class="cvv">CVV</label>
+                  <select class="month">
+                      <option>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                  </select>
+                  <select class="year">
+                      <option >Year</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      
+                  </select>
+                    <input type="number" class="mat" id="mat" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWU0YCQDeaD3xts2DF2Ivl2Z7duPH0oiCMdg&usqp=CAU" width="60px" height="35px">
+                   <div class="many">
+                    As per RBI's directive, w.e.f October 01, 2020, any indian debit/credit card not yet used for online e-commerce will be blocked for all online transactions. In case of such failure, please contact your card issuing bank to enable online usage.
+                   </div>
+            <div class="agree">I agree with the Privacy Policy by proceeding with this payment.</div>
+             <div  class="inr">INR 1349.00 <div class="inr1">&nbsp &nbsp(Total Amount Payable)</div></div>
+             <button class="btn1"><a onclick="enputt()"> Make Payment</a></button>
+             <button class="btn2" onclick="cancel()"><a href="/users/homereal"> Cancel</a></button>
+                </div>
+            </div>
+
+            <div class="right">
+                <p class="order">ORDER DETAILS <P style="line-height: 0px;font-size: 15px;">Order #:&nbsp &nbsp &nbsp VTCT001U2079664D260821</P></p>
+                <hr>
+                <p>Order Amount &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 1349.00</p>
+                <hr>
+                <p class="order">Total Amount    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  INR 1349.00</p>
+            </div>
+        </div>
+        <div><img src="https://secure.ccavenue.com/images/CCAV.png" class="bt1"></div>
+</body>
+</html>
+<script src="/static/js/card.js"></script>

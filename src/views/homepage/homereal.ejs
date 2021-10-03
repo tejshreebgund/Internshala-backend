@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/grid.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <link rel="icon" href="/static/images/intern.jpg"></link>
+    <title>Homepage : Internshala.com</title>
+</head>
+<title>Homepage</title>
+<body>
+<!-- nav -->
+<div class="navbar">
+ 
+    <div class="logo">
+    <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" style="width: 100px "></div>
+    
+      <div class="clear"></div>
+      <a href="/users/indexx" class="wel" onclick="logout()">LOGOUT</a>
+  <a href="/users/tej" style="margin-top: -15px;">Fresher jobs</a>
+  <div class="dropdown">
+    <button class="dropbtn">Online Trianings<span> offers</span>
+              <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/users/tej">Programming</a>
+        <a href="/users/tej">Core Engineering</a>
+        <a href="/users/tej">Data Science</a>
+        <a href="/users/tej">Design</a>
+      </div>
+    </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Internships
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/users/tej">Work From Home</a>
+        <a href="/users/tej">profille</a>
+        <a href="/users/tej">category</a>
+      </div>
+    </div> 
+</div>
+<!-- nav -->
+
+
+    
+    <div>
+        <h2 class="hed">7745 work from home jobs/internships</h2>
+     </div>
+     <div>
+         <p class="par">Are you looking for online jobs/internships or work from home jobs/internships for a limited period of time?
+             Work from home in your preferred field and earn an exciting stipend. Ready to get started? Apply to the best online jobs/internships or work from home jobs/internships below.</p>
+     </div>
+     <div id ="main">
+    <div id="filter-bar" class="first-box">
+        <div>
+            <h3 class="left-head"><i class="fas fa-filter"></i> Filter</h3>
+        </div>
+        <div>
+
+            <form action="/users/store" method="POST">
+                <label class="f1">Catagory</label><br>
+                <input type="text" id="category" placeholder="e.g. marketing,sales,architecture"  >
+                <br>
+                <label class="f1">Location</label><br>
+                <input type="text" id="location" placeholder="e.g. Delhi" >
+                </form>
+
+                <div class="toggleBox">
+                    <h4 class="toggle-class">Work From Home</h4>
+                   <div class="togle">
+                        <input type="checkbox" class="t1">
+                        <label for="" class="onbtn"></label>
+                        <label for="" class="onbtn"></label>
+                    </div>
+                </div>
+                <div class="toggleBox">
+                    <h4 class="toggle-class">Part Time</h4>
+                   <div class="togle">
+                        <input type="checkbox" class="t2">
+                        <label for="" class="onbtn"></label>
+                        <label for="" class="onbtn"></label>
+                    </div>
+                </div>
+                <div>
+                    <form action="filter-info">
+                    <label>Desired minimum monthly stipend</label><br>
+                    <input type="text" placeholder="₹ 1k, 2k... upto 10k" oninput="oninputt()" id="oninp"><br>
+                <label class="f1">Starting from</label><br>
+                <input type="text" placeholder="Choose Date" oninput="oninputt()" id="oninp2"><br>
+                <label  class="f1">Max Duration</label><br>
+            <input type="text" placeholder="Choose Duration" oninput="oninputt()" id="oninp3"><br>
+        </form>
+                <div class="toggleBox">
+                    <h4 class="toggle-class">Internships for women</h4>
+                   <div class="togle">
+                        <input type="checkbox" class="t3">
+                        <label for="" class="onbtn"></label>
+                        <label for="" class="onbtn"></label>
+                    </div>
+                </div>
+                <div class="toggleBox">
+                    <h4 class="toggle-class">Internships with job offer</h4>
+                   <div class="togle">
+                        <input type="checkbox" class="t4">
+                        <label for="" class="onbtn"></label>
+                        <label for="" class="onbtn"></label>
+                    </div>
+                </div>
+                <div class="odd">clear all</div>
+                <div class="bar">OR</div>
+                <h3 class="bar-sec">Search</h3>
+                <input type="search" placeholder="search" id="searchlast">
+                <button class="button" onclick="searchlast()">Search</button>
+            </form>
+        </div>
+        
+
+        </div>
+    </div>
+    <div id = "work">
+   
+<div class="box">
+    <div>
+    <h2 class="box-head">Special offer for students pursuing your degree</h2>
+</div>
+    <a class="tag">Offer</a>
+
+    <p class="content">Get 55% + 10% off online trainings</p>
+    <p class="content">Use coupon: DEGREE10 | </p>
+    <P class="content">Choose from Web Dev, Python, Data Science, Marketing & More </P>
+    <div class = "rad">Internshala Certified Training</div>
+    <a class="en" href="/users/tej">Enroll Now! ></a>
+</div>
+<div class="box-sec">
+    <div>
+    <h2 class="box-head-sec">Business Development (Sales)</h2>
+    <h4>Ostello India Private Limited</h4>
+    </div>
+   <div>
+       <img src="https://internshala.com/cached_uploads/logo%2F5f253b962ee671596275606.jpg" alt="logo" id="photo">
+   </div>
+    <p class="content-sec"> Work From Home</p>
+    <div class = "period">
+            <div class="info-time">
+                <p>START DATE</p>
+                <p>Immediatly</p>
+            </div>
+            <div class="info-time">
+                <p>DURATION</p>
+                <p>6 Weeks</p>
+            </div>
+            <div class="info-time">
+                <p> <img src="">STIPEND</p>
+                <p>₹ 3000-7000/month</p>
+            </div>
+            <div class="info-time">
+                <p>APPLY BY</p>
+                <p>31-Aug-21</p>
+            </div>
+    </div>
+    <div class = "rad-sec">Internship</div>
+    <a class="en-sec" href="/users/viewdetails">View Details ></a>
+</div>
+<div class="box-sec">
+    <div>
+    <h2 class="box-head-sec">Web Development</h2>
+    <h4>Bashank Infotech Private Limited</h4>
+    </div>
+   <div>
+       <img src="https://internshala.com/cached_uploads/logo%2F5e2fdeb6540ac1580195510.png" alt="logo" id="photo">
+   </div>
+    <p class="content-sec"> Work From Home</p>
+    <div class = "period">
+            <div class="info-time">
+                <p>START DATE</p>
+                <p>Immediatly</p>
+            </div>
+            <div class="info-time">
+                <p>DURATION</p>
+                <p>2 Months</p>
+            </div>
+            <div class="info-time">
+                <p> <img src="">STIPEND</p>
+                <p>₹ 1500-2500/month</p>
+            </div>
+            <div class="info-time">
+                <p>APPLY BY</p>
+                <p>10-sep-21</p>
+            </div>
+    </div>
+    <div class = "rad-sec">Internship</div>
+    <a class="en-sec" href="/users/viewdetails">View Details ></a>
+</div>
+<div class="box-sec">
+    <div>
+    <h2 class="box-head-sec">Search Engine Optimization</h2>
+    <h4>RankerZ Media</h4>
+    </div>
+   <div>
+       <img src="https://internshala.com/cached_uploads/logo%2F5e15b750308671578481488.jpg" alt="logo" id="photo">
+   </div>
+    <p class="content-sec"> Work From Home</p>
+    <div class = "period">
+            <div class="info-time">
+                <p>START DATE</p>
+                <p>Immediatly</p>
+            </div>
+            <div class="info-time">
+                <p>DURATION</p>
+                <p>3 Months</p>
+            </div>
+            <div class="info-time">
+                <p> <img src="">STIPEND</p>
+                <p>₹ 5000/month</p>
+            </div>
+            <div class="info-time">
+                <p>APPLY BY</p>
+                <p>10-Sep-21</p>
+            </div>
+    </div>
+    <div class = "rad-sec">Internship</div>
+    <a class="en-sec" href="/users/viewdetails">View Details ></a>
+</div>
+<div class="box-sec">
+    <div>
+    <h2 class="box-head-sec">Business Research</h2>
+    <h4>Harkirat</h4>
+    </div>
+    <p class="content-sec"> Work From Home</p>
+    <div class = "period">
+            <div class="info-time">
+                <p>START DATE</p>
+                <p>Immediatly</p>
+            </div>
+            <div class="info-time">
+                <p>DURATION</p>
+                <p>2 Months</p>
+            </div>
+            <div class="info-time">
+                <p> <img src="">STIPEND</p>
+                <p>₹ 1000/month</p>
+            </div>
+            <div class="info-time">
+                <p>APPLY BY</p>
+                <p>10-Sep-21</p>
+            </div>
+    </div>
+    <div class = "rad-sec">Internship</div>
+    <a class="en-sec" href="/users/viewdetails">View Details ></a>
+</div>
+</div>
+</div>
+<!-- grid -->
+
+<div class="parent">
+    <div>
+        <h3>Internships by places</h3>
+        <h4>Internship in India</h4>
+        <h4>Internship in Delhi</h4>
+        <h4>Internship in Bagalore</h4>
+        <h4>Internship in Hyderabad</h4>
+        <h4>Internship in Mumbai</h4>
+        <h4>Internship in Chennai</h4>
+        <h4>Internship in Gurgaon</h4>
+        <h4>Internship in Kolkata</h4>
+        <h4>Virtual Internship </h4>
+    </div>
+
+    <div>
+        <h3>Internship by Stream</h3>
+        <h4>Computer Science Internship</h4>
+        <h4>Electronics Internship</h4>
+        <h4>Mechanical Internship</h4>
+        <h4>Civil Internship</h4>
+        <h4>Marketing Internship</h4>
+        <h4>Chemical Internship</h4>
+        <h4>Finance Internship</h4>
+        <h4>Summer Research Fellowship</h4>
+        <h4>Campus Ambassador Program</h4>
+    </div>
+
+    <div>
+        <h3 class="offer">Online Trainings</h3>
+        <h4>Programming with Python</h4>
+        <h4>Digital Marketing </h4>
+        <h4>Web Development
+        </h4>
+        <h4>Machine Learning
+        </h4>
+        <h4>Advanced Excel
+        </h4>
+        <h4>Ethical Hacking</h4>
+        <h4>AutoCAD
+        </h4>
+        <h4>Creative Writing</h4>
+        <h4>Data Science</h4>
+    </div>
+
+    <div>
+        <h3>About Internshala</h3>
+        <h4>About us</h4>
+        <h4>We're hiring</h4>
+        <h4>Hire interns for your company</h4>
+        <h4>Team Diary</h4>
+        <h4>Blog</h4>
+        <h4>Our Services</h4>
+        <h4>Terms & Conditions</h4>
+        <h4>Privacy</h4>
+        <h4>Contact us</h4>
+    </div>
+</div>
+<hr class="hr">
+<div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+    <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+    </div>
+
+   <div class="icon">
+    <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+    <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+    <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+    <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+</div>
+<h4 class="copy">© Copyright 2021 Internshala</h4>
+
+<!-- grid -->
+</body>
+</html>
+<script src="/static/js/sorting.js"></script>
+<script src="/static/js/search.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>

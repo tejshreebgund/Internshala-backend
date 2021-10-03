@@ -4,15 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Internships</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/grid.css">
-    <link rel="stylesheet" href="/static/tej.css">
+    <link rel="stylesheet" href="/static/css/grid.css">
+    <link rel="stylesheet" href="/static/css/tej.css">
+    <link rel="icon" href="/static/images/intern.jpg"></link>
+    <title>Trainings : Internshala.com</title>
     <style media="screen">
         .carousel-cell {
             width: 100%;
@@ -34,7 +35,7 @@
 
 
         <div class="fresher">
-            <a href="..//index.html" onclick="logout()">Logout</a>
+            <a href="/users/indexx" onclick="logout()">Logout</a>
         </div>
 
 
@@ -43,10 +44,10 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="../knowmore/python.html">Programming</a>
-                <a href="../knowmore/autocad3d.html">Core Engineering</a>
-                <a href="../knowmore/solidwork.html">Data Science</a>
-                <a href="../knowmore/graphicdesign.html">Design</a>
+                <a href="/users/homereal">Programming</a>
+                <a href="/users/homereal">Core Engineering</a>
+                <a href="/users/homereal">Data Science</a>
+                <a href="/users/homereal">Design</a>
             </div>
         </div>
     </div>
@@ -58,10 +59,10 @@
     <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
 
         <div class="carousel-cell">
-            <img class="w3-image" style="width: 100%;" src="/static/home1.png">
+            <img class="w3-image" style="width: 100%;" src="/static/images/home1.png">
         </div>
         <div class="carousel-cell">
-            <img class="w3-image" style="width: 100%;" src="/static/home2.png">
+            <img class="w3-image" style="width: 100%;" src="/static/images/home2.png">
         </div>
     </div><br>
     <h2>Online Trainings we offer:</h2>
@@ -82,7 +83,7 @@
                         <%=el.description%>
                     </p>
                     <hr>
-                    <a class="link" href="">
+                    <a class="link" href="/users/knowmore/<%=el.id%>">
                         <%=el.moreinfo%>
                     </a>
                     <a class="link1">
@@ -113,7 +114,7 @@
                         <%=el.description%>
                     </p>
                     <hr>
-                    <a class="link" href="">
+                    <a class="link" href="/users/knowmore/<%=el.id%>">
                         <%=el.moreinfo%>
                     </a>
                     <a class="link1">
@@ -145,7 +146,7 @@
                         <%=el.description%>
                     </p>
                     <hr>
-                    <a class="link" href="">
+                    <a class="link" href="/users/knowmore/<%=el.id%>">
                         <%=el.moreinfo%>
                     </a>
                     <a class="link1">
@@ -177,7 +178,7 @@
                         <%=el.description%>
                     </p>
                     <hr>
-                    <a class="link" href="">
+                    <a class="link" href="/users/knowmore/<%=el.id%>">
                         <%=el.moreinfo%>
                     </a>
                     <a class="link1">
@@ -191,12 +192,6 @@
 
             </div>
 
-
-
-
-
-
-         
 
 
                 
@@ -286,4 +281,4 @@
 </body>
 
 </html>
-<script src="home.js"></script>
+<script src="/static/js/search.js"></script>

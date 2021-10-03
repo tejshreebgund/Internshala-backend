@@ -66,4 +66,6 @@ margin-left: 10px;
     color: whitesmoke;
 }.clear{
     clear: both;
+}a{
+    text-decoration: none;
 }

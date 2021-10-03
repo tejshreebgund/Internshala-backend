@@ -5,8 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/static/grid.css">
-<link rel="stylesheet" href="/static/student.css">
+<link rel="stylesheet" href="/static/css/grid.css">
+<link rel="stylesheet" href="/static/css/student.css">
+<link rel="icon" href="/static/images/intern.jpg"></link>
+<title>Student Signup : Internshala.com</title>
 
 </head>
 <body>
@@ -54,7 +56,7 @@
 </div>
 
 <div class="left">
-  <img src="/static/studentback.png">
+  <img src="/static/images/studentback.png">
 </div>
 
 <div class="box">
@@ -62,17 +64,17 @@
     <div class="google"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IR3oWQxRq_eYiJkwZveHmfbzcJoMGngQAmHO6js&usqp=CAU" style="width: 20px;height: 20px;margin-right: 8px;">Sign up with Google</div>
     <p style="text-align: center;color: grey;">━━━━━━━━━ OR ━━━━━━━━━</p>
     
-    <form action="/users/signup" method="post">
+    <form action="/users/signup" method="post" id="man">
         <label style="margin-left: 25px;">Email</label>
-        <input type="text" placeholder="John@example.com" name="email" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
+        <input type="email" placeholder="John@example.com" name="email" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
         <label style="margin-left: 25px;">Password</label>
-        <input type="text" placeholder="Must be atleast 6 characters" name="password" type="password" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="pass">
+        <input type="password"  placeholder="Must be atleast 6 characters" name="password" type="password" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="pass">
         <label style="margin-left: 25px;">First Name</label>
         <label style="margin-left: 103px;">Last Name</label>
         <input type="text" placeholder="John" name="first_name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 25px;" id="first">
         <input type="text" placeholder="Doe" name="last_name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 17px;" id="last">
         <h5 style="float: left;margin-left: 20px;color: #484848;">By signing up, you agree to our &nbsp<h5 class="terms"><a href="https://internshala.com/terms#student">Terms and conditions.</a> </h5></h5>
-        <button class="sign" type="submit">Sign up </button>
+        <button class="sign" type="submit"  href="/users/login">Sign up </button>
          <label style="margin-left: 100px;">Already registerd?</label>
          <label><a href="/users/login">Login</a> </label>
       </div>
@@ -157,5 +159,5 @@
 
 </body>
 </html>
-
+<script src="/static/js/signup.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>

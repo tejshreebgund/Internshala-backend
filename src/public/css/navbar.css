@@ -136,4 +136,6 @@ body {
       margin-bottom: -18px;
   }.inlog{
       margin-top: -13px;
-  }
+  }a{
+    text-decoration: none;
+}

@@ -127,4 +127,8 @@ margin-left: 4px;
     margin-top: 200px;
 }.w3-image{
     width: 100%;height: 380px;
+}.major{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}a{
+    text-decoration: none;
 }

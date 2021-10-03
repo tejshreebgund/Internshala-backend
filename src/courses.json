@@ -1,0 +1,17 @@
+[{"id":1,"image":"https://trainings.internshala.com/static/images/home/web-development.jpg","course_name":"Web Development","description":"Learn how to create a website from scratch","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE"},
+    {"id":2,"image":"img","course_name":"Digital Marketing","description":"Learn SEO Search Engine Marketting","Duration":"Duration 4 weeks","moreinfo":"KNOW MORE"},
+    {"id":3,"image":"img","course_name":"Programming with Python","description":"Build a fantasy cricket game using Python language","Duration":"8 weeks","moreinfo":"KNOW MORE"},
+    {"id":4,"image":"img","course_name":"Advance Excel","description":"Learn how to use Microsoft Excel from scratch","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE"},
+    {"id":5,"image":"img","course_name":"Programming with Python","description":"Build a fantasy cricket game using Python language","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE"},
+    {"id":6,"image":"img","course_name":"Web Deveplopment","description":"Learn how to create a website from scratch","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE"},
+    {"id":7,"image":"img","course_name":"Ethical Hacking","description":"learn to hack and secure web applications","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE"},
+    {"id":8,"image":"img","course_name":"Core java","description":"Develop system application from scratch","Duration":"Duration 4 weeks","moreinfo":"KNOW MORE"},
+    {"id":9,"image":"img","course_name":"Auto CAD","description":"Learn to build 2D drafts 3D models in AutoCAD","Duration":" Duration 8 weeks","moreinfo":"KNOW MORE"},
+    {"id":10,"image":"img","course_name":"AutoCAD 3D ","description":" Master art of 3D modeling AutoCAD","Duration":" Duration 4 weeks","moreinfo":"KNOW MORE"},
+    {"id":11,"image":"img","course_name":"SOLIDWORKS ","description":"Begin your journey 3D Designer Engineer","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE "},
+    {"id":12,"image":"img","course_name":"Advanced SOLIDWORKS","description":"Learn the advanced features to become a certified SOLIDWORKS professional","Duration":"Duration 5 weeks","moreinfo":"KNOW MORE "},
+    {"id":13,"image":"img","course_name":"Graphic Design","description":"Design stunning graphic using Adobe Photoshop","Duration":"Duration 8 weeks","moreinfo":"KNOW MORE "},
+    {"id":14,"image":"img","course_name":"UI/UX Design","description":"Master typography,colour,wireframing and more to become a UI/UX designer","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE "},
+    {"id":15,"image":"img","course_name":"Video Editing","description":"Master transitions,visual effects and more in Adobe Premiere edit like a pro!","Duration":"Duration 4 weeks","moreinfo":"KNOW MORE "},
+    {"id":16,"image":"img","course_name":"Animation","description":"Master the foundations of animation & more using Asobe After Effects!","Duration":"Duration 6 weeks","moreinfo":"KNOW MORE "}
+    ]

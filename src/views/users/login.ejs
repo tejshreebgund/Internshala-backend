@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <link rel="stylesheet" href="/static/login.css">
+  <link rel="stylesheet" href="/static/css/login.css">
+  <link rel="icon" href="/static/images/intern.jpg"></link>
+  <title>Login : Internshala.com</title>
 </head>
 <body>
         <div class="box">
-            <form action="/users/login" method="post">
+            <form action="/users/login" method="post" >
             <div class="google"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7IR3oWQxRq_eYiJkwZveHmfbzcJoMGngQAmHO6js&usqp=CAU" style="width: 20px;height: 20px;margin-right: 8px;">Login with Google</div>
             <p style="text-align: center;color: grey;">━━━━━━━━━ OR ━━━━━━━━━</p>
             <label style="margin-left: 25px;">Email</label>
-            <input type="text" placeholder="John@example.com" name="email" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="mail">
+            <input type="email" placeholder="John@example.com" name="email" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="mail">
             <label style="margin-left: 25px;" >Password</label>
-            <input type="text" name="password" placeholder="Must be atleast 6 characters" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: -25px;" id="security">
+            <input type="password" name="password" placeholder="Must be atleast 6 characters" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: -25px;" id="security">
            
             <h5 style="margin-left: 20px;color: #484848;"><h5 class="terms"><a href="https://internshala.com/login/forgot_password">Forgot Password?</a> </h5></h5>
-            <button class="sign" type="submit">Login </button>
+            <button class="sign" type="submit" href="/users/index">Login </button>
              <label style="margin-left: 30px;">New to Internshala? Register</label>
              <label><a href="/users/signup">(Student / Company)</a> </label>
              </form>
@@ -26,4 +27,4 @@
 </body>
 </html>
 
-<script src="login.js"></script>
+<script src="/users/search"> </script>

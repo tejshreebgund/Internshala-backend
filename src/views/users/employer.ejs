@@ -5,8 +5,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/static/grid.css">
-<link rel="stylesheet" href="/static/employer.css">
+<link rel="stylesheet" href="/static/css/grid.css">
+<link rel="stylesheet" href="/static/css/employer.css">
+<link rel="icon" href="/static/images/intern.jpg"></link>
+<title>Employer Signup : Internshala.com</title>
 
 </head>
 <body>
@@ -56,24 +58,25 @@
 </div>
 
 <div class="left">
-  <img src="/static/studentback.png" >
+  <img src="/static/images/studentback.png" >
 </div>
 
 <div class="box">
-
+  <form action="/users/employer" method="post">
    
     <label class="mat">Official Email Id</label>
-    <input type="text" placeholder="name@comapny_name.com" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+    <input name="email" type="email" placeholder="name@comapny_name.com" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
     <label class="mat">Password</label>
-    <input type="text" placeholder="Must be atleast 6 characters" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+    <input type="password" name="password" placeholder="Must be atleast 6 characters" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="pass">
     <label class="mat">Your First Name</label>
     <label style="margin-left: 55px;">Your Last Name</label>
-    <input type="text" placeholder="Your First Name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
-    <input type="text" placeholder="Your Last Name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 17px;">
+    <input name="first_name" type="text" placeholder="Your First Name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="first">
+    <input name="last_name" type="text" placeholder="Your Last Name" style="width: 39%;height: 35px;margin-top: 5px;margin-left: 17px;" id="last">
     <h5 class="mat1">By registering, you agree to our &nbsp<h5 class="terms"><a href="https://internshala.com/terms#student">Terms and conditions.</a> </h5></h5>
-    <button class="sign"><a href="login.html">Register Now</a> </button>
+    <button class="sign"><a href="/users/login" onclick="savedata()">Register Now</a> </button>
      <label style="margin-left: 130px;"><a href="https://internshala.com/employer/help_center_faq/16">Have a question?</a> </label>
-  </div>
+ </form>
+    </div>
 
 
   <div class="parent">
@@ -152,4 +155,5 @@
       src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
       data-auto-a11y="true"
     ></script>
+    <script src="/static/js/signup.js"></script>
     

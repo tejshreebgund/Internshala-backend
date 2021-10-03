@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/static/css/otp.css">
+   <link rel="icon" href="/static/images/intern.jpg"></link>
+   <title>OTP Confirmation : Internshala.com</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+        </div>
+        <div class="bot">
+            <div class="otp">ENTER OTP</div>
+            <div>OTP is sent to your Mobile Number</div>
+            <input placeholder="One Time Password" id="btn">
+            <button class="btn" onclick="submit()">SUBMIT </button>
+            <button class="btn1"><a href="/users/homereal"> Go to HomePage</a></button>
+        </div>
+</body>
+</html>
+<script>
+    
+    function submit(){
+        var val = document.getElementById('btn').value;
+        if(val==""){
+            alert("Enter OTP")
+        }else{
+            window.location.href="/users/success";
+        }
+    }
+</script>

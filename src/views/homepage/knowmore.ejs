@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/knowmore.css">
+    <link rel="stylesheet" href="/static/css/grid.css">
+    <link rel="icon" href="/static/images/intern.jpg"></link>
+    <title>Knowmore : Internshala.com</title>
+</head>
+
+<body>
+    <!-- nav -->
+       
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://internshala.com/static/images/common/new_internshala_logo.svg" />
+            <div class="train"> TRAININGS</div>
+        </div>
+
+
+        <div class="fresher">
+            <a href="/users/homereal"><u>Home</u></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Online Trianings
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/users/tej">Programming</a>
+                <a href="/users/tej">Core Engineering</a>
+                <a href="/users/tej">Data Science</a>
+                <a href="/users/tej">Design</a>
+            </div>
+        </div>
+</div>
+    <!-- nav -->
+
+    </div>
+
+
+    <div class="web_dev_page">
+        <div id="div_back_img">
+    <div class="web_dev_cont">
+        <div class="banner_section">
+            <%user1.map(function (el){%>
+            <div class="cert_tr"><%=el.certified%></div>           
+            <h1 class="course_head"><span id="span_heading">  <%=el.title%></span></h1>
+            <p class="course_brief">  <%=el.syllabus%></p>
+             <div class="course_img_cont">
+            <div id="course_img1"class="course_img">
+                 <img src="https://trainings.internshala.com/static/images/icons/star.svg"><span class="course_span">  <%=el.Ratings%></span>
+             </div>
+             <div id="course_img2" class="course_img">
+                <img src="https://trainings.internshala.com/static/images/icons/enrolled-students.svg"><span  class="course_span">  <%=el.students%></span>
+            </div>
+            <div id="course_img3" class="course_img">
+                <img src="https://trainings.internshala.com/static/images/icons/calendar.svg"><span  class="course_span">  <%=el.Duration%></span>
+            </div>
+            <div id="course_img4" class="course_img">
+                <img src="	https://trainings.internshala.com/static/images/icons/placement-assistace.svg"><span  class="course_span"> <%=el.Placement%></span>
+            </div>
+            </div>
+            <%})%>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+            <div id="sign_up_section">
+                <div class="box">
+
+                   
+                    <label >Mobile Number :</label>
+                    <input type="number" placeholder="+91 1234567890" style="width: 85%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;" id="email">
+                    <label >Batch</label>
+                    <select name="bjyfg" id="" style="width: 87%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+                    <option>Choose Batch</option>
+                    <option>1 Sep, 2021</option>
+                    <option>15 Sep, 2021</option>
+                    <option>1 Oct, 2021</option>
+                    <option>15 Oct, 2021</option>
+                    <option>1 Nov, 2021</option>
+                    <option>15 Nov, 2021</option>
+                </select>
+                <label >I want to learn this to :</label>
+                    <select name="bjyfg" id="" style="width: 87%;height: 35px;margin-top: 5px;margin-left: 25px;margin-bottom: 15px;">
+                        <option>Choose your objective</option>
+                        <option>Gain a new skill</option>
+                        <option>Build my own project</option>
+                        <option>Get an internship/job in future.</option>
+                        <option>Gain a certifcate</option>
+                        <option>Fulfil college requirement.</option>
+                        </select>
+                        <div class="email" >  <strike>₹4499</strike></div>
+                        <div class="orange" > &nbsp 1349/-</div>
+                        <div class="new">&nbsp Valid till 30th Aug</div>
+                   
+                   
+                    <button class="sign"><a  onclick="mob()" >Sign up </a> </button>
+                   </div>
+            </div>
+            </div>
+            <div class="clr_float"></div>
+        </div>
+
+        <div id="tr_high_top" class="tr_highlight_section">
+            <h1>Training Highlights</h1>
+            <div class="tr_description">
+            <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/learn_from_home.png"></div>
+            <div class="text"><h3>Learn from home</h3><p>Stay safe indoors</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/beginner_friendly.png"></div>
+            <div class="text"><h3>Certificate of Training</h3><p>from Internshala Trainings</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/placement_assistance.png"></div>
+            <div class="text"><h3>Placement assistance</h3><p>To build your career</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/video_tutorials.png"></div>
+            <div class="text"><h3>138 video tutorials</h3><p>138 video tutorials</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/projects.png"></div>
+            <div class="text"><h3>Build 1 project</h3><p>For hands-on practice</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/doubt_clearing.png"></div>
+            <div class="text"><h3>Doubt clearing</h3><p>Through Q&A forum</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/beginner_friendly.png"></div>
+            <div class="text"><h3>Beginner friendly</h3><p>No prior knowledge required</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/weeks.png"></div>
+            <div class="text"><h3>8 weeks access</h3><p>To the platform</p></div>
+        </div>
+        <div class="tr_img_text">
+            <div  class="Img_top"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/training_highlight_icons_tmt/downloadable_content.png"></div>
+            <div class="text"><h3>Downloadable content</h3><p>With lifetime access</p></div>
+        </div>
+        </div>
+        </div>
+       <!--- why learn section-->
+       <div id="why_learn_sec" class="web_dev_desc">
+        <div class="web_dev_desc_text">
+            <h2>Why learn this Skill?</h2>
+            <div class="lower_head">
+            <h4>Build awesome websites</h4>
+            <p>Mark Zuckerberg built Facebook. Sachin Bansal built Flipkart. What will you build?</p>
+        </div>
+        <div class="lower_head">
+            <h4>Be in demand</h4>
+            <p>With 1.7 billion websites on the internet, it is one of the hottest career options with an average fresher salary of 6 LPA for full stack developers according to Glassdoor.</p>
+        </div>
+        <div class="lower_head">
+            <h4>Eat-Sleep-Code-Repeat</h4>
+            <p>Be it rain or sunshine, coding is always on your mind.</p>
+        </div>
+        </div>
+        <div class="web_dev_desc_img">
+            <img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/illustration-images/why-learn.png">
+        </div>
+        </div>
+<!---certifiacte section-->
+        <div id="certificate_section" class="web_dev_desc">
+            <div class="cert_img"><img src="https://trainings.internshala.com/cached_uploads/web-development/signup_page_media/illustration-images/certificate.png"></div>
+            <div class="cert_text"><h2>Industry recognized certificate</h2><p>100,000+ companies use Internshala for hiring every year. So a certificate from Internshala is recognized everywhere.</p></div>
+            </div>
+<!--how will training work section-->
+            <div id="tr_high_bottom"  class="tr_highlight_section">
+                <h1>How will your training work?</h1>
+                <div class="tr_description">
+                <div class="tr_wr_img_text">
+                <div class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/videos.png"></div>
+                <div class="text"><h3>Learn concepts</h3><p>Go through training videos to learn concepts</p></div>
+                </div>
+                <div  class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/assignments.png"></div>
+                <div class="text"><h3>Test yourself</h3><p>Test your knowledge through quizzes & module tests at regular intervals</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/practice.png"></div>
+                <div class="text"><h3>Hands-on practice</h3><p>Work on assignments and projects. Use our in-browser IDE for coding practice</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/doubt_clearing.png"></div>
+                <div class="text"><h3>1:1 doubt solving</h3><p>Get your doubts solved by experts through Q&A forum within 24 hours</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/test.png"></div>
+                <div class="text"><h3>Take final exam</h3><p>Complete your training by taking the final exam</p></div>
+                </div>
+                <div class="tr_wr_img_text">
+                <div  class="Img_bot"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-l/certificate.png"></div>
+                <div class="text"><h3>Get certified</h3><p>Get certified in Web Development upon successful completion of training</p></div>
+                </div>
+                </div>
+                </div>
+                <!--training syllabus-->     
+                <div id="tr_syllabus">
+                    <h2>Training syllabus</h2>
+                    <div id="tr_syll_desc">
+                        <div class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/videos.png"></div>
+                            <div class="syll_text">92 video tutorials</div>
+                        </div>
+                        <div  class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/assignments.png"></div>
+                            <div class="syll_text">3 assignments</div>
+                        </div>
+                        <div  class="syll_img_text">
+                            <div class="syll_img"><img src="https://trainings.internshala.com/static/images/signup_ab/features/icons-s/projects.png"></div>
+                            <div class="syll_text">1 project</div>
+                        </div>
+                    </div>
+                    <p>After completing the training, you can also download videos for future reference</p>
+                    <div id="syll_box">
+                        <div class="topic_box">
+                            <div><p class="Main_topic">HTML</p></div>
+                            <ul>
+                                <li>6 Topics</li>
+                                <li>Demo video inside</li>
+                            </ul>  
+                        </div>
+                        <div class="topic_box">
+                        <div><p class="Main_topic">CSS</p></div>
+                        <ul>
+                            <li>11 Topics</li>
+                            <li>Demo video inside</li>
+                        </ul>  
+                    </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">Bootstrap</div>
+                <ul>
+                    <li>3 Topics</li>
+                </ul>  
+                </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">DBMS</p></div>
+                <ul>
+                    <li>Topics</li>
+                    <li>1 Demo video inside</li>
+                </ul>  
+                </div>
+                <div class="topic_box">
+                <div><p class="Main_topic">PHP</p></div>
+                <ul>
+                    <li>10 Topics</li>
+                </ul>  
+                </div>
+                 </div>
+                </div>
+    </div>
+    <br>
+<div class="clear"></div>
+        <!-- grid -->
+        <div class="parent" style="margin-top: 100px;">
+            <div>
+                <h3>Internships by places</h3>
+                <h4>Internship in India</h4>
+                <h4>Internship in Delhi</h4>
+                <h4>Internship in Bagalore</h4>
+                <h4>Internship in Hyderabad</h4>
+                <h4>Internship in Mumbai</h4>
+                <h4>Internship in Chennai</h4>
+                <h4>Internship in Gurgaon</h4>
+                <h4>Internship in Kolkata</h4>
+                <h4>Virtual Internship </h4>
+            </div>
+ 
+            <div>
+                <h3>Internship by Stream</h3>
+                <h4>Computer Science Internship</h4>
+                <h4>Electronics Internship</h4>
+                <h4>Mechanical Internship</h4>
+                <h4>Civil Internship</h4>
+                <h4>Marketing Internship</h4>
+                <h4>Chemical Internship</h4>
+                <h4>Finance Internship</h4>
+                <h4>Summer Research Fellowship</h4>
+                <h4>Campus Ambassador Program</h4>
+            </div>
+    
+            <div>
+                <h3 class="offer">Online Trainings</h3>
+                <h4>Programming with Python</h4>
+                <h4>Digital Marketing </h4>
+                <h4>Web Development
+                </h4>
+                <h4>Machine Learning
+                </h4>
+                <h4>Advanced Excel
+                </h4>
+                <h4>Ethical Hacking</h4>
+                <h4>AutoCAD
+                </h4>
+                <h4>Creative Writing</h4>
+                <h4>Data Science</h4>
+            </div>
+    
+            <div>
+                <h3>About Internshala</h3>
+                <h4>About us</h4>
+                <h4>We're hiring</h4>
+                <h4>Hire interns for your company</h4>
+                <h4>Team Diary</h4>
+                <h4>Blog</h4>
+                <h4>Our Services</h4>
+                <h4>Terms & Conditions</h4>
+                <h4>Privacy</h4>
+                <h4>Contact us</h4>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="play"><i class="fab fa-google-play fa-2x" style="color: white;margin-top: 10px;"></i>
+            <a href="https://play.google.com/store/apps/details?id=com.internshala.app&referrer=utm_source%3Dplay_footer" class="playy"> Get Android App</a>
+            </div>
+    
+           <div class="icon">
+            <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-2x" id="ic1" ></i></a>
+            <a href="https://www.twitter.com"> <i class="fab fa-twitter fa-2x"id="ic"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x" id="ic"></i></a>
+            <a href="https://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x" id="ic"></i></a>
+        </div>
+        <h4 class="copy">© Copyright 2021 Internshala</h4>
+        <!-- grid -->
+</body>
+</html>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+<script src="/static/js/card.js"></script>
