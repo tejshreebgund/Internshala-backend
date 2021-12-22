@@ -39,7 +39,7 @@ Contributions are always welcome!
 
 ## How to use our website.
 - Install git on your machine
-- Clone our repository by running the command git clone https://github.com/Neha-081/Backend-Internshala.git
+- Clone our repository by running the command git clone https://github.com/tejshreebgund/Internshala-backend.git
 - And then run following two commands
 - npm install
 - npm start
